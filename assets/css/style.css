@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/****General Use***/
+
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.np-left{
+    padding-left: 0;
+}
+
+.np-right{
+    padding-right: 0;
+}
+
+button:focus{
+    outline: 0 !important;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+
+/****Nav-Bar***/
+
+.nav-link{
+    padding-right: 1rem;
+    padding-left: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;    
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+@media  (max-width: 784px) {
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
