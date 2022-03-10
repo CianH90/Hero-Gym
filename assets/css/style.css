@@ -26,6 +26,10 @@ a:hover{
     text-decoration: none !important;
 }
 
+.bg-blue{
+    background-color: #2b3d52 !important;
+}
+
 
 /****Nav-Bar***/
 
@@ -88,15 +92,21 @@ a:hover{
     text-transform: uppercase;
 }
 
+.text-center{
+    text-align: center !important;
+}
+
 /***About****/
 .services{
     background-color: #f5f9fd;
 }
 
-.col-lg-12{
+.card-box{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
+
 
 .sect-title{
     margin-bottom: 2rem;
@@ -106,7 +116,7 @@ a:hover{
     text-transform: uppercase;
 }
 
-.services-wrap{
+.services-card{
     background: #fafafa;
     border-radius: 5px;
     padding: 25px 20px;
@@ -119,7 +129,7 @@ a:hover{
     box-shadow: 0 8px 12px 0 rgba(164, 164, 164, 0.2);
 }
 
-.services-wrap:hover, .services-wrap:focus, .services-wrap:active{
+.services-card:hover, .services-card:focus, .services-card:active{
     transform: scale(1.03);
     -webkit-transform: scale(1.03);
     box-shadow: 0 5px 25px 0 rgba(164, 164, 164, 0.2);
@@ -130,7 +140,7 @@ a:hover{
     height: 50%;
 }
 
-.services-wrap:hover .card-img{
+.services-card:hover .card-img{
     transform: scale(1.09);
     -webkit-transform: scale(1.09);
 }
@@ -138,10 +148,185 @@ a:hover{
 .card-title{
     margin: 1em;
 }
+
+.services-card img{
+    background: #f5f9fd;
+    border-radius: 0%;
+    height: 130px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    transform: perspective(1px) translateZ(0);
+    -webkit-transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-property: transform;
+    -webkit-transition-property: transform;
+}
+
+/***Testimonials****/
+
+
+.img-l{
+    align-items: left;
+    width: 20% !important;
+    height: 50% !important;
+}
+
+.img-r{
+    align-items: right;
+    width: 20% !important;
+    height: 50% !important;
+}
+
+.comment{
+    font-size: 1rem;
+    line-height: 2.0;
+    text-align: left;
+    left: 120px;
+    top: 210px;
+    width: 30% !important;
+}
+
+.testimonials{
+    padding-top: 3.5rem;
+}
+
+/***Footer****/
+.facebook-icon:hover{
+    color: #fafafa;
+    transition: all 0.5s ease-in-out;
+}
+
+.facebook-icon:hover i{
+    color: #3b5998;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.instagram-icon:hover{
+    color: #fafafa;
+    transition: all 0.5s ease-in-out;
+}
+
+.instagram-icon:hover i{
+    color: #d62976;
+    transition: all 0.5s ease-in-out;
+}
+
+.youtube-icon:hover{
+    color: #fafafa;
+    transition: all 0.5s ease-in-out;
+}
+
+.youtube-icon:hover i{
+    color: #e52d27;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-links{
+    font-size: 2rem;
+}
+
+p.copyright{
+    color: #fafafa;
+    margin-top: auto !important;
+    font-size: 1rem !important;
+    
+}
+
+footer span{
+    width: 30%;
+}
+
+
+/***About-Page****/
+
 @media  (max-width: 784px) {
+
     .navbar-nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    /*hero*/
+    .h-logo{
+        color: #fafafa;
+        text-shadow: 4px 4px 4px #000;
+        font-weight: 700;
+        font-size: 5.5rem;
+        text-transform: uppercase;
+    }
+    
+    .slogan{
+        font-size: 1.75rem;
+        letter-spacing: .5px;
+        font-weight: 500;
+    
+    }
+    
+    .quote{
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    /*Services*/
+    .services{
+        background: #f5f9fd;
+        padding: 30px 0;
+    }
+
+    /**button*/
+    .hero-btn{
+        width: 150px !important;
+        height: 50px !important;
+        font-size: 1.25rem !important;
+        font-weight: 300 !important;    
+    }
+
+    .btn-danger{
+        font-size: 1rem !important;
+        color: #fafafa;
+        transition: all 0.2s ease-in-out !important;
+        border-radius: 50rem !important;
+    }
+    .sm-margin{
+        gap: 10%;
+    }
+
+
+    .img-l{
+        align-items: left;
+        width: 50% !important;
+        height: 50% !important;
+    }
+
+    .img-r{
+        align-items: right;
+        width: 50% !important;
+        height: 50% !important;
+    }
+
+    .comment{
+        width: 50% !important;
+    }
+
+    /*footer*/
+    .social-icons{
+        display: flex !important;
+    }
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    p.copyright{
+        margin-top: auto !important;
+        font-size: 1rem;
+        text-align: center;
+
     }
 }
