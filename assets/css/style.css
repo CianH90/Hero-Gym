@@ -193,6 +193,12 @@ a:hover{
 }
 
 /***Footer****/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .facebook-icon:hover{
     color: #fafafa;
     transition: all 0.5s ease-in-out;
@@ -241,6 +247,15 @@ footer span{
 
 
 /***About-Page****/
+video{
+    height: auto;
+    width: 60%;
+
+}
+
+.intro-txt{
+    text-align: center;
+}
 
 @media  (max-width: 784px) {
 
@@ -314,6 +329,13 @@ footer span{
     }
 
     /*footer*/
+    footer{
+        display: flex;
+        flex-direction: column !important;
+        text-align: center !important;
+        justify-content: center !important;
+
+    }
     .social-icons{
         display: flex !important;
     }
