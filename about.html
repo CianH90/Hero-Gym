@@ -1,93 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!--Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Animation on scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hero Gym/About</title>
 </head>
+
 <body>
-        <!--Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><i class="fa-solid fa-dumbbell"></i>ero gym</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link"href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+        <div class="container-fluid oswald">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-dumbbell"></i>ero gym</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        
-        <section class="intro container text-center">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="sect-title">What we DO</h2>
-                    <p class="intro-txt">Here at hero gym we welcome a wide range of clients from avid gym goers to people new to the health and fitness scene, <br>
-                    we provide a wide range of sevices from in-house personal trainers to tailor made workout and nutrition plans,<br>
+        </div>
+    </nav>
+
+    <section class="intro container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="sect-title oswald" data-aos="filp-right">What we DO</h2>
+                <p class="intro-txt roboto">Here at hero gym we welcome a wide range of clients from avid gym goers to
+                    people
+                    new to the health and fitness scene, <br>
+                    we provide a wide range of sevices from in-house personal trainers to tailor made workout and
+                    nutrition plans,<br>
                     our goal is to make sure our clients get the most out of their visit.</p>
-                   <video src="assets/vid/Ad.mp4" controls></video>
+                <video src="assets/vid/Ad.mp4" controls></video>
             </div>
-        </section>
-        <div class="img-cover">
-            <img src="assets/images/bottomimg.svg" alt="" class="img-fluid">
-          </div>
-        
-        <!--Footer-->
-        <footer class="bg-blue">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <a href="#" class="navbar-brand">
-                        <i class="fa-solid fa-dumbbell"></i>
-                        ero Gym
-                    </a>
-                    <span class="text-center">
-                        <p class="copyright">Copyright 2022 Herogym All Rights Reserved.</p>
-                    </span>
-                    <div class="justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav list-inline social-links justify-content-end">
-                            <li class="nav-item social-icons">
-                                <a href="" class="nav-link facebook-icon">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link instagram-icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link youtube-icon">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </li>
-                        </ul>
+        </div>
+    </section>
+    <div class="img-cover">
+        <img src="assets/images/bottomimg.svg" alt="" class="img-fluid">
+    </div>
+
+    <section class="services text-center">
+        <h2 class="sect-title oswald">
+            Services we provide!
+        </h2>
+        <div class="container">
+            <div class="row text-center justify-content-center service-sect" data-aos="filp-left">
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="service-info" id="trainers">
+                        <h3 class="service-title oswald">
+                            personal trainers
+                        </h3>
+                        <hr class="personal">
+                        <p class="roboto">Thinking of hiring a personal trainer? We work in conjunction with a number of personal trainers who have a minimum of fiver years experiance in the industry. Come talk to us and we will match you with a trainer to suit your need whether it is an in-house trainer or a trainer to make out-calls we have you covered.</p>
+                        <div class="img-block">
+                            <img src="assets/images/card_1.jpg" alt="personal Training" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+            </div>
+            <div class="row text-center justify-content-center service-sect">
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="service-info" id="classes">
+                        <h3 class="service-title oswald" data-aos="filp-right">
+                            Classes
+                        </h3>
+                        <hr class="classes">
+                        <p class="roboto">Come and check out our wide range of classes, from HITT to yoga. Our classes range in fitness level from beginner to advanced gym goers. All gym members get the oppertunity to try each class for free so they can decide if it is the class for them.
+
+                        </p>
+                        <div class="img-block">
+                            <img src="assets/images/card_3.jpg" alt="fitness class" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center service-sect">
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="service-info" id="meals">
+                        <h3 class="service-title oswald">
+                            Meal Plans
+                        </h3>
+                        <hr class="meal">
+                        <p class="roboto">Have you been trying to lose weight to no avail? If so we will tailor a meal plan for you,
+                            we will include your favourite foods to make sure you are still enjoying the things you like while living a healtier lifestyle.  
+                        </p>
+                        <div class="img-block">
+                            <img src="https://images.unsplash.com/photo-1606858274001-dd10efc5ce7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="meal plans" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="text-center text-lg-start bg-blue">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="text-center py-2">
+                    <h3 class="footer-logo" aria-label="Hero Gym footer Logo"><a href="index.html"><i
+                                class="fa-solid fa-dumbbell"></i>ero gym</a></h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12">
+                <div class="container d-flex justify-content-center py-2">
+                    <button type="button" aria-label="facebook link"
+                        class="btn facebook-icon icon  btn-lg btn-floating mx-2">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </button>
+                    <button type="button" aria-label="youtube link"
+                        class="btn youtube-icon icon  btn-lg btn-floating mx-2">
+                        <i class="fa-brands fa-youtube"></i>
+                    </button>
+                    <button type="button" aria-label="instagram link"
+                        class="btn instagram-icon icon btn-lg btn-floating mx-2">
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12">
+                <!-- Copyright -->
+                <div class="text-center text-white p-2 bg-blue">
+                    © 2020 Copyright: Hero Gym 2022
+
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <!--Aos Call to action-->
+    <script>
+        jQuery(document).ready(function () {
+            AOS.init({
+                duration: 1200,
+                easing: "ease-out-cubic",
+                delay: 200,
+                once: 1
+            });
+        });
+    </script>
 </body>
+
 </html>

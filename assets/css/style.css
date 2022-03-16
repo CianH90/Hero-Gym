@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 /****General Use***/
@@ -22,6 +27,10 @@ button:focus{
     outline: 0 !important;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 a:hover{
     text-decoration: none !important;
 }
@@ -30,6 +39,23 @@ a:hover{
     background-color: #2b3d52 !important;
 }
 
+/*Fonts*/
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Headings*/
+h1, h2, h3, h4{
+    font-family: 'Oswald', sans-serif;
+}
+/*Paragraph*/
+p{
+    font-family: 'Roboto', sans-serif;
+}
 
 /****Nav-Bar***/
 
@@ -44,6 +70,11 @@ a:hover{
     font-size: 1.8rem;
     text-transform: uppercase;
     user-select: none;
+    color: #fafafa !important;
+}
+
+.navbar-brand a{
+    text-decoration: none;
 }
 
 /****Hero***/
@@ -51,7 +82,7 @@ a:hover{
 #hero{
     background: linear-gradient(to top, rgba(41,128,185, 0.8), rgba(109,213,250, 0.8)),
     url("../images/post-1.jpg") repeat scroll center center / cover;
-    height: 75vh;
+    min-height: 75vh;
     width: 100%;
 
     display: flex;
@@ -59,6 +90,10 @@ a:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+#hero button{
+    width: 25%;
 }
 
 .h-logo{
@@ -84,12 +119,39 @@ a:hover{
 
 .btn-danger{
     font-size: 1.5rem;
+    font-family:  'Oswald', sans-serif;
     color: #fafafa;
     background: #ED213A !important;
     transition: all 0.2 ease-in-out;
     font-weight: 600;
     border-radius: 50rem;
     text-transform: uppercase;
+}
+
+.btn-info{
+    font-size: 1.5rem;
+    font-family:  'Oswald', sans-serif;
+    color: #fafafa;
+    background: #3b5998 !important;
+    transition: all 0.2 ease-in-out;
+    font-weight: 600;
+    border-radius: 50rem;
+    text-transform: uppercase;
+}
+.btn-success{
+    font-size: 1.5rem;
+    font-family:  'Oswald', sans-serif;
+    color: #fafafa;
+    background:#0f9b0f !important;
+    transition: all 0.2 ease-in-out;
+    border: none;
+    font-weight: 600;
+    border-radius: 50rem;
+    text-transform: uppercase;
+}
+
+.btn-info:hover{
+    color: #fafafa;
 }
 
 .text-center{
@@ -110,8 +172,7 @@ a:hover{
 
 .sect-title{
     margin-bottom: 2rem;
-    font-size: 1.75rem;
-    line-height: 1.5;
+    font-size: 4rem;
     margin-top: 15px;
     text-transform: uppercase;
 }
@@ -166,39 +227,63 @@ a:hover{
 
 /***Testimonials****/
 
-
-.img-l{
-    align-items: left;
-    width: 20% !important;
-    height: 50% !important;
-}
-
-.img-r{
-    align-items: right;
-    width: 20% !important;
-    height: 50% !important;
-}
-
-.comment{
-    font-size: 1rem;
-    line-height: 2.0;
-    text-align: left;
-    left: 120px;
-    top: 210px;
-    width: 30% !important;
-}
-
 .testimonials{
-    padding-top: 3.5rem;
+    width: 100%;
+    padding-top: 1rem;
+    background: #cdcdcd;
 }
 
-/***Footer****/
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.wrapper{
+    background: #fafafa;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1rem;
 }
+
+.wrapper::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.wrapper img{
+    width: 170px;
+    height: 170px;
+    float: left;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.wrapper span{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+/***Footer****/  
+
+footer{
+    width: 100%;
+}
+
+  .footer-logo{
+     font-size: 2.5rem;
+     color: #fafafa;
+     font-weight: bold;
+     text-transform: uppercase;
+  }
+
+  .footer-logo a{
+      text-decoration: none;
+      color: #fafafa;
+  }
+
+
+
+ .icon{
+     font-size: 2rem;
+     color: #fafafa;
+ }
+
 .facebook-icon:hover{
     color: #fafafa;
     transition: all 0.5s ease-in-out;
@@ -230,9 +315,6 @@ footer{
     transition: all 0.5s ease-in-out;
 }
 
-.social-links{
-    font-size: 2rem;
-}
 
 p.copyright{
     color: #fafafa;
@@ -241,9 +323,6 @@ p.copyright{
     
 }
 
-footer span{
-    width: 30%;
-}
 
 
 /***About-Page****/
@@ -257,6 +336,142 @@ video{
     text-align: center;
 }
 
+.services hr{
+    width: 33%;
+    margin-left: 33%;
+    height: 3px;
+    border-radius: 5px;
+}
+
+.personal{
+    background: #ED213A ;
+}
+
+.classes{
+    background: #6DD5FA !important;
+}
+
+.meal{
+    background: #0f9b0f !important;
+}
+
+.services img{
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.service-info{
+    padding-top: 17px;    
+}
+
+.service-title{
+    font-size: 2rem;
+    padding-bottom: 7.5px;
+    text-transform: uppercase;
+}
+
+
+/***Contact****/
+
+.contact{
+    width: 100%;
+    min-height: 100vh; 
+    background: linear-gradient(to top, rgba(41,128,185, 0.8), rgba(109,213,250, 0.8)),
+    url("../images/post-2.jpg") repeat scroll center center / cover; 
+}
+
+form{
+    text-align: center;
+}
+
+form h2{
+    padding-top: 15%;
+    margin-top: 0 !important;
+}
+
+form button{
+    width: 35% !important;
+}
+
+.textinput{
+    margin-bottom: .5rem;
+    width: 40%;
+    border-radius: 10px;
+    opacity: .75;
+}
+
+/*Media Queries*/
+@media (max-width: 990px){
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /*Contact form*/
+    .textinput{
+        width: 60%;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 300px){
+    #hero-button{
+        width: 50%;
+    }
+      .navbar-nav{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: end;
+    }
+    
+    .h-logo{
+        color: #fafafa;
+        text-shadow: 4px 4px 4px #000;
+        font-weight: 700;
+        font-size: 5rem !important;
+        text-transform: uppercase;
+    }
+    
+    .slogan{
+        font-size: 1.5rem !important;
+        letter-spacing: .5px;
+        font-weight: 500;
+    
+    }
+    
+    .quote{
+        font-size: 1rem !important;
+        letter-spacing: .25px;
+        font-weight: 500;
+    }
+
+    .sect-title{
+        margin-bottom: 2rem;
+        font-size: 3rem !important;
+        margin-top: 15px;
+        text-transform: uppercase;
+    }
+}
+
+    /*Testimonials*/
+@media (max-width: 500px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wrapper img{
+        margin-bottom: .75rem;
+    }
+    
+}    
 @media  (max-width: 784px) {
 
     .navbar-nav{
@@ -272,6 +487,10 @@ video{
         font-weight: 700;
         font-size: 5.5rem;
         text-transform: uppercase;
+    }
+
+    #hero button{
+        width: 50% !important;
     }
     
     .slogan{
@@ -294,15 +513,9 @@ video{
     }
 
     /**button*/
-    .hero-btn{
-        width: 150px !important;
-        height: 50px !important;
-        font-size: 1.25rem !important;
-        font-weight: 300 !important;    
-    }
 
     .btn-danger{
-        font-size: 1rem !important;
+        font-size: 1.5rem !important;
         color: #fafafa;
         transition: all 0.2s ease-in-out !important;
         border-radius: 50rem !important;
@@ -328,27 +541,21 @@ video{
         width: 50% !important;
     }
 
-    /*footer*/
-    footer{
-        display: flex;
-        flex-direction: column !important;
-        text-align: center !important;
-        justify-content: center !important;
-
-    }
-    .social-icons{
-        display: flex !important;
+    video{
+        width: 95%;
+        height: auto;
     }
 
-    .navbar-nav{
-        display: flex;
-        flex-direction: row !important;
+    /*contact Form*/
+    .textinput{
+        width: 80%;
     }
 
-    p.copyright{
-        margin-top: auto !important;
-        font-size: 1rem;
-        text-align: center;
+    form h2{
+        font-size: 2.5rem !important;
+    }
 
+    form button{
+        width: 75% !important;
     }
 }

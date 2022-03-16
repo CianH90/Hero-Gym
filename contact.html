@@ -6,70 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Hero-Gym</title>
+    <title>Hero Gym/Contact</title>
 </head>
 
 <body>
     <!--Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-dumbbell"></i>ero gym</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue" aria-label="navigation bar">
+        <div class="container-fluid oswald">
+            <a class="navbar-brand" aria-label="Hero Gym navigation Logo" role="logo" href="index.html"><i class="fa-solid fa-dumbbell"></i>ero gym</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" aria-label="navigation links">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!--Form-->
+    <section class="contact" aria-label="contact form">
+        <div class="container">
+            <form action="">
+                <h2 class="sect-title">Contact Us</h2>
+                <input type="text" placeholder="Name" aria-label="name input" required class="textinput">
+                <br>
+                <input type="email" placeholder="Email" aria-label="email input" required class="textinput">
+                <br>
+                <input type="phonenumber" placeholder="Phone Number" aria-label="Phone number input" required class="textinput">
+                <br>
+                <textarea name="message" placeholder="Enter Message" cols="30" rows="10" class="textinput"></textarea>
+                <br>
+                <br>
+                <button type="reset" class="btn btn-danger ">Submit</button>
+            </form>
+        </div>
+    </section>
+
+   
 
     <!--Footer-->
-    <footer class="bg-blue">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand">
-                    <i class="fa-solid fa-dumbbell"></i>
-                    ero Gym
-                </a>
-                <span class="text-center">
-                    <p class="copyright">Copyright 2022 Herogym All Rights Reserved.</p>
-                </span>
-                <div class="justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav list-inline social-links justify-content-end">
-                        <li class="nav-item social-icons">
-                            <a href="" class="nav-link facebook-icon">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link instagram-icon">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link youtube-icon">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
+    <footer class="text-center text-lg-start bg-blue">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+        <div class="text-center py-2"><h3 class="footer-logo" aria-label="Hero Gym footer Logo"><a href="index.html"><i class="fa-solid fa-dumbbell"></i>ero gym</a></h3>
+        </div>
+        </div>
+            <div class="col-12 col-sm-12">
+      <div class="container d-flex justify-content-center py-2">
+        <button type="button" aria-label="facebook link" class="btn facebook-icon icon  btn-lg btn-floating mx-2">
+          <i class="fa-brands fa-facebook-f"></i>
+        </button>
+        <button type="button" aria-label="youtube link" class="btn youtube-icon icon  btn-lg btn-floating mx-2">
+          <i class="fa-brands fa-youtube"></i>
+        </button>
+        <button type="button" aria-label="instagram link" class="btn instagram-icon icon btn-lg btn-floating mx-2">
+          <i class="fa-brands fa-instagram"></i>
+        </button>
+      </div>
+            </div>
+                <div class="col-12 col-sm-12">
+      <!-- Copyright -->
+      <div class="text-center text-white p-2 bg-blue">
+        © 2020 Copyright: Hero Gym 2022
+        
+      </div>
                 </div>
             </div>
-        </nav>
+      <!-- Copyright -->
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
