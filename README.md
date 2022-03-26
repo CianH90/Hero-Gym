@@ -71,10 +71,34 @@ This website is for Hero Gym who decided it is about time for them to have an pr
 
 - W3C CSS Validation 
     - [Styles](https://jigsaw.w3.org/css-validator/validator#warnings) 
+## Testing User Stories
 
+- #### First time visitor goal
+    1. As a first time visitor I want to know what the site is about and learn what they do.
+        1. Upon launching the site, users see an easy to read navigation with a hero image that clearly indecates what the website is about.
+        2. The user can see a call to action button that links to a contact form.
+        3. The user can use the call to action or scroll to learn more about the gym.
+              
+- #### Returning Visitor goals
+    1. As a returning visitor I wish to be able to contact the gym.
+        1. Upon returning I am greeted by a call to action that links to contact page
+        2. Scrooling down to the footer I am able to access the gyms social media pages by following the social links.
+
+        
 ### Further Testing
+- The website was tested on multiple browsers.
+    - Opera
+    - Safari
+    - Chrome
+    - Brave
+    - FireFox
+    - Edge
+
+- The website was tested on all moblie devices allowed by the above browsers.
+- The website had been tested by friends and family in order to gauge user experience.
 
 ### Known Bugs
+- Meal card on index.html shrinks faster than the others.
 - On some mobile devices a white space is visible which causes scrolling on the X axis.
 - When ajusting screen sizes text in the testimonials doesn't adjust accordingly.
 

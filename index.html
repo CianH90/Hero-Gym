@@ -21,8 +21,8 @@
   <header class="landing">
     <nav class="navbar navbar-expand-lg navbar-dark bg-blue" aria-label="navigation bar">
       <div class="container-fluid oswald">
-        <a class="navbar-brand" aria-label="Hero Gym navigation Logo" role="logo" href="#"><i
-            class="fa-solid fa-dumbbell"></i>ero gym</a>
+        <a class="navbar-brand" aria-label="Hero Gym navigation Logo" href="#">
+          <i class="fa-solid fa-dumbbell"></i>ero gym</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
         <h1 class="h-logo oswald" aria-label="langing page logo"><i class="fa-solid fa-dumbbell"></i>ero Gym</h1>
         <p class="quote roboto">"Definition of a really good workout: when you hate doing it, But you love finishing
           it."</p>
-        <a href=""><button type="button" class="hero-btn btn btn-danger">Contact</button></a>
+        <button type="submit" class="hero-btn btn btn-danger" onclick="window.location.href='contact.html'">Contact</button>
       </div>
     </div>
   </header>
@@ -59,7 +59,7 @@
     <div class="container text-center">
       <div class="row">
         <div class=" col-sm-12 col-lg-12 col-md-12 col-xs-12 text-center">
-          <h2 class="sect-title oswald">Our services<h2>
+          <h2 class="sect-title oswald">Our services</h2>
         </div>
         <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
           <div class="row justify-content-center align-center">
@@ -81,7 +81,7 @@
                     </ul>
                   </div>
                   <div class="card-button">
-                    <a href="about.html#trainers"><button class="btn btn-danger">Learn More</button></a>
+                    <button class="btn btn-danger" onclick="window.location.href='about.html#trainers'">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -103,7 +103,7 @@
                     </ul>
                   </div>
                   <div class="card-button">
-                    <a href="about.html#classes"><button class="btn btn-info">Learn More</button></a>
+                    <button class="btn btn-info" onclick="window.location.href='about.html#classes'">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -125,7 +125,7 @@
                     </ul>
                   </div>
                   <div class="card-button">
-                    <a href="about.html#meals"><button class="btn meal btn-success">Learn More</button></a>
+                    <button class="btn meal btn-success" onclick="window.location.href='about.html#meals'">Learn More</button>
                   </div>
                 </div>
               </div>
@@ -147,21 +147,21 @@
     <p>Check out what our clients say about us!</p>
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-4">
-        <div class="wrapper" aria-label="testimonial">
+        <div class="wrapper">
           <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
           <p><span>Larry Joe.</span>Comedian.</p>
           <p>Staff at Hero Gym are very helpful and helped me achive my fitness goals!</p>
         </div>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-4">
-        <div class="wrapper" aria-label="testimonial">
+        <div class="wrapper">
           <img src="https://images.unsplash.com/photo-1549351512-c5e12b11e283?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Sheila Smith">
           <p><span>Sheila Smith.</span>CEO Health Food Inc.</p>
           <p>Thanks to Hero Gyms personalised meal plans I was able to reach my weightloss goals without starving myself.</p>
         </div>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-4">
-        <div class="wrapper" aria-label="testimonial">
+        <div class="wrapper">
           <img src="https://images.unsplash.com/photo-1587064712555-6e206484699b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
           <p><span>Paul Jake.</span>Youtuber.</p>
           <p>My personal trainer at Hero Gym helped me realise that there is nothing out of my reach as long put in the commitment needed.</p>
@@ -181,14 +181,14 @@
       </div>
       <div class="col-12 col-sm-12">
         <div class="container d-flex justify-content-center py-2">
-          <button type="button" aria-label="facebook link" class="btn facebook-icon icon  btn-lg btn-floating mx-2">
-            <i class="fa-brands fa-facebook-f"></i>
+          <button type="button" value="facebook" class="btn facebook-icon icon  btn-lg btn-floating mx-2">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
           </button>
-          <button type="button" aria-label="youtube link" class="btn youtube-icon icon  btn-lg btn-floating mx-2">
-            <i class="fa-brands fa-youtube"></i>
+          <button type="button" value="youtube" class="btn youtube-icon icon  btn-lg btn-floating mx-2">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
           </button>
-          <button type="button" aria-label="instagram link" class="btn instagram-icon icon btn-lg btn-floating mx-2">
-            <i class="fa-brands fa-instagram"></i>
+          <button type="submit" formtarget="_blank" value="instagram" class="btn instagram-icon icon btn-lg btn-floating mx-2">
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           </button>
         </div>
       </div>

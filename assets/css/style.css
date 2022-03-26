@@ -117,12 +117,16 @@ p{
     font-weight: 500;
 }
 
+.btn a{
+    text-decoration: none !important;
+    color: #fafafa !important;
+}
 .btn-danger{
     font-size: 1.5rem;
     font-family:  'Oswald', sans-serif;
     color: #fafafa;
     background: #ED213A !important;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
     font-weight: 600;
     border-radius: 50rem;
     text-transform: uppercase;
@@ -133,7 +137,7 @@ p{
     font-family:  'Oswald', sans-serif;
     color: #fafafa;
     background: #3b5998 !important;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
     font-weight: 600;
     border-radius: 50rem;
     text-transform: uppercase;
@@ -143,11 +147,16 @@ p{
     font-family:  'Oswald', sans-serif;
     color: #fafafa;
     background:#0f9b0f !important;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
     border: none;
     font-weight: 600;
     border-radius: 50rem;
     text-transform: uppercase;
+}
+
+button a{
+    color: #fafafa;
+    text-decoration: none;
 }
 
 .btn-info:hover{
@@ -524,22 +533,6 @@ form button{
         gap: 10%;
     }
 
-
-    .img-l{
-        align-items: left;
-        width: 50% !important;
-        height: 50% !important;
-    }
-
-    .img-r{
-        align-items: right;
-        width: 50% !important;
-        height: 50% !important;
-    }
-
-    .comment{
-        width: 50% !important;
-    }
 
     video{
         width: 95%;

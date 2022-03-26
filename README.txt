@@ -70,3 +70,4 @@ Pexels
 Pavel Danilyuk
 https://images.pexels.com/photos/6339488/pexels-photo-6339488.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-6339488.jpg&fm=jpg
 
+https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
