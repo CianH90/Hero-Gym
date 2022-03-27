@@ -84,7 +84,7 @@ This website is for Hero Gym who decided it is about time for them to have an pr
         1. Upon returning I am greeted by a call to action that links to contact page
         2. Scrooling down to the footer I am able to access the gyms social media pages by following the social links.
 
-        
+
 ### Further Testing
 - The website was tested on multiple browsers.
     - Opera
@@ -107,16 +107,23 @@ This website is for Hero Gym who decided it is about time for them to have an pr
 ## Deployment
 
 ### GitHub Pages
+- #### Steps for Deployment
+    - Log in to Github and locate the relevent repositary
+    - Click the settings tab above the repository
+    - Find the "Pages" option on vertical menu left hand side of the page
+    - Find the source option, click the dropdown menu and select "main branch"
+    - The page will automatically refresh and the [link](https://cianh90.github.io/Hero-Gym/about.html) to the published site will appear, 
 
 
 
 ### Forking the GitHub Repository
 
-
+- Could not for as I am not a memember of an orgainisation.
 
 
 ### Making a Local Clone
-
+- Log in to Github and select relevant repository
+- Click "Code" dropdown menu select "Download Zip"
 
 ## Credits
 
